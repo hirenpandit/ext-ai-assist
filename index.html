@@ -12,19 +12,32 @@
 	<div class="container">
 		<h1>Welcome to, AI Assist 🎉</h1>
 		<button id="scan-btn" class="btn">Scan this page</button>
+		<div id="error-box" class="hidden"></div>
 		<div id="question-box" class="question-box">
 			<label for="question">Ask a Question</label>
 			<textarea id="question" placeholder="Type your question here..." disabled></textarea>
 			<button id="submit-btn" class="btn submit-btn" disabled>Submit</button>
 		</div>
 		<div id="answer-box" class="answer-box">
-			<h2>Answers</h2>
+			<h2>Hisotry</h2>
 			<div id="answer-list" class="answer-list">
 				<!-- Answers will be appended here -->
+				<!--<div class="question-item">-->
+				<!--	what is useEffect used for?-->
+				<!--</div>-->
+				<!--<div class="answer-item">-->
+				<!--	IndexedDB is a way for you to persistently store data inside a user's browser.-->
+				<!--	Because it lets you create web applications with rich query abilities regardless-->
+				<!--	of network availability, these applications can work both online and offline.-->
+				<!--	IndexedDB is useful for applications that store a large amount of data (for-->
+				<!--	example, a catalog of DVDs in a lending library) and applications that don't-->
+				<!--	need persistent internet connectivity to work (for example, mail clients, to-do-->
+				<!--	lists, and notepads).-->
+				<!--</div>-->
 			</div>
 		</div>
 	</div>
-	<script src="scripts/app.js"></script>
+	<script src="scripts/app.js" type="module"></script>
 </body>
 
 </html>

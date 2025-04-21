@@ -7,12 +7,13 @@ html {
 	background-color: #f9fafb;
 	color: #111;
 	height: 100%;
+	width: 500px;
 }
 
 /* Container Styling */
 .container {
 	padding: 20px;
-	width: 250px;
+	width: 450px;
 	text-align: center;
 }
 
@@ -96,6 +97,7 @@ button:disabled {
 	margin-top: 20px;
 	text-align: left;
 	display: none;
+	flex-direction: column;
 }
 
 .answer-box h2 {
@@ -119,5 +121,39 @@ button:disabled {
 	border-radius: 10px;
 	margin-bottom: 8px;
 	font-size: 0.9rem;
+	transition: background 0.3s;
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.answer-item.even {
+	background-color: #f0f4ff;
+}
+
+.answer-item.odd {
+	background-color: #fff7e6;
+}
+
+.question-item {
+	text-align: right;
+	padding: 8px 10px;
+	border-radius: 10px;
+	margin-bottom: 5px;
+	background-color: #fff7e6;
+	transition: background 0.3s;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+#error-box {
+	background-color: #ffe5e5;
+	color: #b00020;
+	padding: 10px;
+	border-radius: 8px;
+	margin-top: 10px;
+	font-size: 14px;
+	display: none;
+	transition: opacity 0.3s ease;
+}
+
+#error-box.visible {
+	display: block;
 }
